@@ -194,3 +194,10 @@ nlu:
     - buy premium
     - show premium
     - premium options
+
+- intent: out_of_scope
+  examples: |
+    - I want to order food
+    - What is 2 + 2?
+    - Who's the US President?
+    - what is going on ?

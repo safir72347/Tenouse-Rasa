@@ -95,6 +95,8 @@ responses:
   utter_premium:
   - text: "template_premium"
 
+  utter_out_of_scope:
+    - text: Sorry, I didn't get what you said. Please rephrase what you said.
 
 session_config:
   session_expiration_time: 60
