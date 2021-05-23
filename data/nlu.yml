@@ -145,6 +145,7 @@ nlu:
 - intent: start_alerts
   examples: |
     - alert
+    - alerts
     - send alerts
     - alert me of houses
     - send me alerts
@@ -194,6 +195,27 @@ nlu:
     - buy premium
     - show premium
     - premium options
+
+- intent: lend_property
+  examples: |
+    - lend property
+    - post property
+    - give property on rent
+    - sell property
+    - add property to tenouse
+    - look for tenants
+
+- intent: search_property
+  examples: |
+    - find property
+    - rent property
+    - pay for house
+    - find house
+    - find house in my area
+    - look for a house in my area
+    - best house
+    - search house
+    - search property
 
 - intent: out_of_scope
   examples: |

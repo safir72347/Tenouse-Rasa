@@ -16,6 +16,8 @@ intents:
   - unsubscribe_daily
   - house_of_the_day
   - premium
+  - lend_property
+  - search_property
   - my_email:
       use_entities:
         - email
@@ -94,6 +96,12 @@ responses:
 
   utter_premium:
   - text: "template_premium"
+
+  utter_lend_property_intro:
+  - text: "template_lend_property_intro"
+
+  utter_search_property_intro:
+  - text: "template_search_property_intro"
 
   utter_out_of_scope:
     - text: Sorry, I didn't get what you said. Please rephrase what you said.

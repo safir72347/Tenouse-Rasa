@@ -94,3 +94,13 @@ stories:
   steps:
     - intent: premium
     - action: utter_premium
+
+- story: lend property
+  steps:
+    - intent: lend_property
+    - action: utter_lend_property_intro
+
+- story: search property
+  steps:
+    - intent: search_property
+    - action: utter_search_property_intro
