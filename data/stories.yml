@@ -28,3 +28,69 @@ stories:
   - action: utter_did_that_help
   - intent: deny
   - action: utter_goodbye
+
+- story:
+  steps:
+  - intent: bot_identity
+  - action: utter_greet
+
+- story: user authorization
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_ask_email
+  - intent: my_email
+    entities:
+    - email: "safirmotiwala@gmail.com"
+  - slot_was_set:
+    - email: "safirmotiwala@gmail.com"
+  - action: utter_confirm
+  - intent: affirm
+  - action: utter_ask_otp
+  - intent: my_otp
+    entities:
+    - otp: "1234"
+  - slot_was_set:
+    - otp: "1234"
+  - action: utter_ask_name
+  - intent: my_name
+    entities:
+    - name: "Safir Motiwala"
+  - slot_was_set:
+    - name: "Safir Motiwala"
+  - action: utter_thanks
+
+- story: tenouse menu
+  steps:
+    - intent: menu
+    - action: utter_menu
+
+- story: start alerts
+  steps:
+    - intent: start_alerts
+    - action: utter_start_alerts
+
+- story: stop alerts
+  steps:
+    - intent: stop_alerts
+    - action: utter_stop_alerts
+
+- story: subscribe
+  steps:
+    - intent: subscribe_daily
+    - action: utter_subscribe
+
+- story: unsubscribe
+  steps:
+    - intent: unsubscribe_daily
+    - action: utter_unsubscribe
+
+- story: house of the day
+  steps:
+    - intent: house_of_the_day
+    - action: utter_hod
+
+- story: premium
+  steps:
+    - intent: premium
+    - action: utter_premium

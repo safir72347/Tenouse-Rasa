@@ -8,10 +8,40 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
+  - bot_identity
+  - menu
+  - start_alerts
+  - stop_alerts
+  - subscribe_daily
+  - unsubscribe_daily
+  - house_of_the_day
+  - premium
+  - my_email:
+      use_entities:
+        - email
+  - my_otp:
+      use_entities:
+        - otp
+  - my_name:
+      use_entities:
+        - name
+
+entities:
+  - name
+  - email
+  - otp
+
+slots:
+  name:
+    type: text
+  email:
+    type: text
+  otp:
+    type: text
 
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
+  - text: "template_intro"
 
   utter_cheer_up:
   - text: "Here is something to cheer you up:"
@@ -28,6 +58,43 @@ responses:
 
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
+
+  utter_ask_name:
+  - text: "What is your name ?"
+
+  utter_ask_email:
+  - text: "Can you please send your email to continue ?"
+
+  utter_ask_otp:
+  - text: "Great! I’ve sent you an OTP on email, please enter the OTP to confirm your identity ?"
+
+  utter_confirm:
+  - text: "Can you please confirm your email ?"
+
+  utter_thanks:
+  - text: "template_thanks_for_details"
+
+  utter_menu:
+  - text: "template_show_menu"
+
+  utter_start_alerts:
+  - text: "template_start_alerts"
+
+  utter_stop_alerts:
+  - text: "template_stop_alerts"
+
+  utter_subscribe:
+  - text: "template_subscribe"
+
+  utter_unsubscribe:
+  - text: "template_unsubscribe"
+
+  utter_hod:
+  - text: "template_house_of_the_day"
+
+  utter_premium:
+  - text: "template_premium"
+
 
 session_config:
   session_expiration_time: 60

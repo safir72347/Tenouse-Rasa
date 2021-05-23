@@ -90,3 +90,107 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+
+- intent: bot_identity
+  examples: |
+    - What is your name ?
+    - Tell me your name ?
+    - name ?
+    - What others call you ?
+    - What should I call you ?
+    - Where are you from ?
+    - What is this ?
+    - What is Tenouse ?
+    - Who are you ?
+    - Who developed you ?
+    - What is your identity ?
+    - Tenouse
+
+- intent: my_email
+  examples: |
+    - my email is [safirmotiwala@gmail.com]{"entity":"email", "value":"safirmotiwala@gmail.com"}
+    - my email is [safir123@gmail.com]{"entity":"email", "value":"safir123@gmail.com"}
+    - my email is [123safir@gmail.com]{"entity":"email", "value":"123safir@gmail.com"}
+    - [safirmotiwala@gmail.com]{"entity":"email", "value":"safirmotiwala@gmail.com"} is my email
+    - [safirmotiwala@gmail.com]{"entity":"email", "value":"safirmotiwala@gmail.com"}
+    - here you go [safirmotiwala@gmail.com]{"entity":"email", "value":"safirmotiwala@gmail.com"}
+
+- intent: my_otp
+  examples: |
+    - my otp is [1234]{"entity": "otp"}
+    - [1234]{"entity": "otp"}
+    - [1234]{"entity": "otp"} is my otp
+    - here you go [1234]{"entity": "otp"}
+    - this is my otp [1234]{"entity": "otp"}
+
+- intent: my_name
+  examples: |
+    - my name is [Safir Motiwala]{"entity":"name", "value":"Safir Motiwala"}
+    - my name is [safir motiwala]{"entity":"name", "value":"safir motiwala"}
+    - my name is [safir m]{"entity":"name", "value":"safir m"}
+    - [Safir Motiwala]{"entity":"name", "value":"Safir Motiwala"} is my name
+    - [Safir Motiwala]{"entity":"name", "value":"Safir Motiwala"} this side
+    - people call me [Safir Motiwala]{"entity":"name", "value":"Safir Motiwala"}
+
+- intent: menu
+  examples: |
+    - menu
+    - send menu
+    - options
+    - please send options
+    - show menu
+    - show options
+    - functions
+
+- intent: start_alerts
+  examples: |
+    - alert
+    - send alerts
+    - alert me of houses
+    - send me alerts
+    - start alerts
+
+- intent: stop_alerts
+  examples: |
+    - no alerts
+    - stop alerts
+    - pause alerts
+    - remove alerts
+
+- intent: subscribe_daily
+  examples: |
+    - subscribe
+    - subscribe to news
+    - subscribe to tenouse
+    - please subscribe
+    - add subscription
+
+- intent: unsubscribe_daily
+  examples: |
+    - unsubscribe
+    - unsubscribe to news
+    - unsubscribe to tenouse
+    - stop subscription
+    - remove subscription
+
+- intent: house_of_the_day
+  examples: |
+    - house of the day
+    - send house of the day
+    - show house of the day
+    - show hod
+    - send hod
+    - hod
+    - what is house of the day
+    - please show house of the day
+
+- intent: premium
+  examples: |
+    - premium
+    - I want premium
+    - please give me premium
+    - premium cost
+    - please send me premium
+    - buy premium
+    - show premium
+    - premium options
