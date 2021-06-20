@@ -32,7 +32,7 @@ stories:
 - story:
   steps:
   - intent: bot_identity
-  - action: utter_greet
+  - action: utter_info
 
 - story: user authorization
   steps:

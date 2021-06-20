@@ -106,6 +106,9 @@ responses:
   utter_out_of_scope:
     - text: Sorry, I didn't get what you said. Please rephrase what you said.
 
+  utter_info:
+    - text: "template_bot_intro"
+
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
